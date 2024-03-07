@@ -32,29 +32,57 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  table, th, td {
+    border: 1px solid #c0b4b4;
+  }
+  th, td {
+    padding: 10px;
+  }
+  th {
+    background-color: #2c282a96;
+    color: #fff;
+    font-weight: bold;
+  }
   .button {
-    display: inline-block;
+    display: block;
     padding: 15px 30px;
-    margin: 20px;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-    background-color: #ff69b4;
-    border: 2px solid #ff69b4;
+    background-color: #ff69b4bd;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
   }
   .button:hover {
-    background-color: #ff0080;
-    border-color: #ff0080;
+    background-color: #ff0080d0;
   }
 </style>
 </head>
 <body>
 <div class="container">
-  <a class="button" href="https://github.com/files2d/app/releases/download/apk/picacg.apk" download>Download PicACG</a>
-  <a class="button" href="https://github.com/files2d/app/releases/download/apk/jmstable.apk" download>Download JMTT</a>
+  <table>
+    <tr>
+      <th>BK Download</th>
+      <th>JM Download</th>
+    </tr>
+    <tr>
+      <td><a class="button" href="https://github.com/files2d/app/releases/download/apk/picacg.apk" download>Origin</a></td>
+      <td><a class="button" href="https://github.com/files2d/app/releases/download/apk/jmstable.apk" download>Origin</a></td>
+    </tr>
+    <tr>
+      <td><a class="button" href="https://sciproxy.com/github.com/files2d/app/releases/download/apk/picacg.apk" download>Mirror</a></td>
+      <td><a class="button" href="https://sciproxy.com/github.com/files2d/app/releases/download/apk/jmstable.apk" download>Mirror</a></td>
+    </tr>
+    <tr>
+      <td><a class="button" href="https://ghproxy.net/https://github.com/files2d/app/releases/download/apk/picacg.apk" download>Mirror</a></td>
+      <td><a class="button" href="https://ghproxy.net/https://github.com/files2d/app/releases/download/apk/jmstable.apk" download>Mirror</a></td>
+    </tr>
+  </table>
 </div>
 </body>
 </html>
